@@ -18,8 +18,8 @@
             <div class="nav-links">
                 <ul>
                     <li>Home</li>
-                    <li>About</li>
-                    <li>contact us</li>
+                    <li>World Map</li>
+                    <li>Bounties</li>
                 </ul>
             </div>
 
@@ -130,5 +130,48 @@
      </section>
 
 
+    <footer class="footer">
+        
+        
+
+
+    </footer>
+    
+<audio id="bg-audio" autoplay loop>
+        <source src="d63f2216e847ea88c1f56b032d54da5d_160.m4a" type="audio/mpeg">
+        
+  
+     </audio>
+     <button id="audio-btn" >🔊 Pause</button>
+
 </body>
+ 
+<script>
+    const audio = document.getElementById('bg-audio');
+  const btn = document.getElementById('audio-btn');
+
+  // Try to autoplay on page load
+  window.addEventListener('load', () => {
+    audio.play().then(() => {
+      btn.textContent = 'Pause'; // Playing
+    }).catch(() => {
+      // Autoplay blocked, so button says Play instead
+      btn.textContent = 'Play';
+    });
+  });
+
+  // Button toggles play/pause
+  btn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      btn.textContent = 'Pause';
+    } else {
+      audio.pause();
+      btn.textContent = 'Play';
+    }
+  });
+
+</script>
+
+
 </html>

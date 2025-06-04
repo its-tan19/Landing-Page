@@ -31,7 +31,7 @@ nav{
 }
 .nav-links ul li:hover{
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-underline-offset: 5px;
     text-decoration-thickness: 3px;
 }
 
@@ -175,7 +175,7 @@ nav{
 .quote-text{
     font-style: italic;
     color: black;
-    font-weight: 300;
+    font-weight: 500;
     margin: 50px;
 }
 .quote-author{
@@ -185,3 +185,23 @@ nav{
     color: black;
     font-weight: 900;
 }
+
+
+  #audio-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+
+
+
+
+  
